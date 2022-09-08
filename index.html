@@ -4,8 +4,94 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<title>My CV</title>
 </head>
 <body>
+	<header class="header">
+		<div class="container container__header">
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__link"><a href="#contacts">Contacts</a></li>
+					<li class="nav__link"><a href="#about">About Me</a></li>
+					<li class="nav__link"><a href="#skills">Skills</a></li>
+					<li class="nav__link"><a href="#code">Code Example</a></li>
+					<li class="nav__link"><a href="#languages">Languages</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<div class="container">
+			<div class="contacts" id="contacts">
+				<div class="contacts__column contacts__avatar">
+					<img src="img/ava.jpg" alt="avatar">
+				</div>
+				<div class="contacts__column contacts__info">
+					<h2 class="title">Contacts</h2>
+					<ul class="contacts__list">
+						<li class="contacts__item">Location: Moscow, Russia</li>
+						<li class="contacts__item">Tel: +7 910 815 25 92</li>
+						<li class="contacts__item">Email: topprogrammer@gmail.com</li>
+						<li class="contacts__item">GitHub: porosyatka</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="about" id="about">
+				<h2 class="title">About Me</h2>
+				<p>I want to become a software developer.</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="skills" id="skills">
+				<h2 class="title">Skills</h2>
+				<ul class="skills__list">
+					<li class="skills__item">HTML5</li>
+					<li class="skills__item">CSS3/SCSS</li>
+					<li class="skills__item">Git</li>
+					<li class="skills__item">JavaScript</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<div class="code"  id="code">
+				<h2 class="title">Code Example</h2>
+				<div class="code__text">
+					<pre class="code">
+						<code>
+function cu(str) {
+	let c = ''
+	for (let i = 0; i < (str.length); i++) {
+		c = c + str[(str.length-1)-i]
+	}
+	return c
+}</code>
+					</pre>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="languages" id="languages">
+				<h2 class="title">Languages</h2>
+				<div class="languages__blok">
+					<h3 class="language">English</h3>
+					<p>A2 Elementary</p>
+				</div>
+				<div class="languages__blok">
+					<h3 class="language">Russian</h3>
+					<p>Native</p>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__text">
+				RS_School 2022
+			</div>
+		</div>
+	</footer>
 </body>
 </html>
